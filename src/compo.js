@@ -16,25 +16,17 @@ class CompoScaffold extends React.Component {
       <div>
         <div>Hallo von Compo</div>
         <br />
-        <span>Inhalt von Item#1:</span>
         <div>{store.items[0].title}</div>
         <div>Counter = {store.items[0].counter}</div>
         <button onClick={() => this.onCounter1()} type="button">
           Counter 1 +
         </button>
         <br />
-        <br />
-        <br />
-        <span>Inhalt von Item#2:</span>
         <div>{store.items[1].title}</div>
         <div>Counter: {store.items[1].counter}</div>
         <button onClick={() => this.onCounter2()} type="button">
           Counter 2 +
         </button>
-        <br />
-        <br />
-        <br />
-        <br />
         <div>Clicks insgesamt: {store.countClicks}</div>
       </div>
     );
@@ -42,3 +34,4 @@ class CompoScaffold extends React.Component {
 }
 
 export default observer(CompoScaffold);
+//export default CompoScaffold;
